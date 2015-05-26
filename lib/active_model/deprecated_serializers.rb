@@ -1,7 +1,6 @@
+require 'active_support/lazy_load_hooks'
 require "active_model/deprecated_serializers/version"
 
-module ActiveModel
-  module DeprecatedSerializers
-    # Your code goes here...
-  end
+ActiveSupport.on_load(:active_model) do
+  require "active_model/deprecated_serializers/xml"
 end
