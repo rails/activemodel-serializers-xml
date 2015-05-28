@@ -115,6 +115,7 @@ ActiveRecord::Schema.define do
     t.string :preferences
     t.integer :alternative_id
     t.string :address
+    t.timestamps
   end
 
   create_table :contact_stis do |t|
@@ -127,6 +128,7 @@ ActiveRecord::Schema.define do
     t.string :preferences
     t.integer :alternative_id
     t.string :address
+    t.timestamps
   end
 
   create_table :topics do |t|

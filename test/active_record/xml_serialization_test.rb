@@ -170,8 +170,8 @@ class DefaultXmlSerializationTimezoneTest < ActiveRecord::TestCase
 
   def test_should_serialize_datetime_with_timezone_reloaded
     with_timezone_config zone: "Pacific Time (US & Canada)" do
-      toy = Toy.create(:name => 'Minnie', :updated_at => Time.utc(2006, 8, 1)).reload
-      assert_match %r{<updated-at type=\"dateTime\">2006-07-31T17:00:00-07:00</updated-at>}, toy.to_xml
+      contact = ARContact.create(:name => 'Minnie', :updated_at => Time.utc(2006, 8, 1)).reload
+      assert_match %r{<updated-at type=\"dateTime\">2006-07-31T17:00:00-07:00</updated-at>}, contact.to_xml
     end
   end
 end
