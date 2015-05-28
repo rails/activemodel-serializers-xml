@@ -1,4 +1,4 @@
-require "minitest_helper"
+require "helper"
 require "rexml/document"
 require 'models/arcontact'
 require 'models/post'
