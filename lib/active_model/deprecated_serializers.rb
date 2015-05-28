@@ -1,6 +1,8 @@
 require 'active_support'
 require 'active_support/core_ext'
 require 'active_support/lazy_load_hooks'
+require 'active_record'
+require 'active_model'
 require "active_model/deprecated_serializers/version"
 
 ActiveSupport.on_load(:active_model) do
