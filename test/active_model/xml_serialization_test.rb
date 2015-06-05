@@ -12,7 +12,7 @@ class Customer < Struct.new(:name)
 end
 
 class Address
-  include ActiveModel::DeprecatedSerializers::Xml
+  include ActiveModel::Serializers::Xml
 
   attr_accessor :street, :city, :state, :zip, :apt_number
 

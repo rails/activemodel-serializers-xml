@@ -1,5 +1,5 @@
 class ARContact < ActiveRecord::Base
-  include ActiveModel::DeprecatedSerializers::Xml
+  include ActiveModel::Serializers::Xml
 
   belongs_to :alternative, :class_name => 'ARContact'
   serialize :preferences

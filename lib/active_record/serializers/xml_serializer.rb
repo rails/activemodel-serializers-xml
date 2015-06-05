@@ -2,7 +2,7 @@ require 'active_support/core_ext/hash/conversions'
 
 module ActiveRecord #:nodoc:
   module Serialization
-    include ActiveModel::DeprecatedSerializers::Xml
+    include ActiveModel::Serializers::Xml
 
     # Builds an XML document to represent the model. Some configuration is
     # available through +options+. However more complicated cases should
@@ -176,8 +176,8 @@ module ActiveRecord #:nodoc:
     end
   end
 
-  class XmlSerializer < ActiveModel::DeprecatedSerializers::Xml::Serializer #:nodoc:
-    class Attribute < ActiveModel::DeprecatedSerializers::Xml::Serializer::Attribute #:nodoc:
+  class XmlSerializer < ActiveModel::Serializers::Xml::Serializer #:nodoc:
+    class Attribute < ActiveModel::Serializers::Xml::Serializer::Attribute #:nodoc:
       def compute_type
         klass = @serializable.class
         cast_type = klass.type_for_attribute(name)

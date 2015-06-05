@@ -6,7 +6,7 @@ require 'active_support/core_ext/hash/slice'
 require 'active_support/core_ext/time/acts_like'
 
 module ActiveModel
-  module DeprecatedSerializers
+  module Serializers
     module Xml
       extend ActiveSupport::Concern
       include ActiveModel::Serialization

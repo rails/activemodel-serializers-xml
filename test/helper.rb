@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'active_model/deprecated_serializers'
+require 'active_model/serializers'
 
 require 'active_support/testing/autorun'
 

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'active_model/deprecated_serializers/version'
+require 'active_model/serializers/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "active_model-deprecated_serializers"
-  spec.version       = ActiveModel::DeprecatedSerializers::VERSION
+  spec.name          = "activemodel-serializers-xml"
+  spec.version       = ActiveModel::Serializers::VERSION
   spec.authors       = ["Zachary Scott"]
   spec.email         = ["e@zzak.io"]
 
