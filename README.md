@@ -1,6 +1,6 @@
 # ActiveModel::Serializers::Xml
 
-[![Build Status](https://travis-ci.org/zzak/activemodel-serializers-xml.svg)](https://travis-ci.org/zzak/activemodel-serializers-xml)
+[![Build Status](https://api.travis-ci.org/rails/activemodel-serializers-xml.svg)](https://travis-ci.org/rails/activemodel-serializers-xml)
 
 This gem provides XML serialization for your Active Model objects and Active Record models.
 
