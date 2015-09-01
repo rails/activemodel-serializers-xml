@@ -3,7 +3,7 @@ sudo: false
 script:
   - bundle exec rake test
 rvm:
-  - 2.2.2
+  - 2.2 # tests on latest 2.2.x
   - ruby-head
   - rbx-2
   - jruby-head

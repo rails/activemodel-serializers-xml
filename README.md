@@ -1,7 +1,5 @@
 # ActiveModel::Serializers::Xml
 
-[![Build Status](https://api.travis-ci.org/rails/activemodel-serializers-xml.svg)](https://travis-ci.org/rails/activemodel-serializers-xml)
-
 This gem provides XML serialization for your Active Model objects and Active Record models.
 
 ## Installation
@@ -84,10 +82,8 @@ This gem also provides serialization to XML for Active Record.
 
 Please see ActiveRecord::Serialization#to_xml for more information.
 
-## Contributing
+## Contributing to ActiveModel::Serializers::Xml
 
-1. Fork it ( https://github.com/[my-github-username]/activemodel-serializers-xml/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+ActiveModel::Serializers::Xml is work of many contributors. You're encouraged to submit pull requests, propose features and discuss issues.
+
+See [CONTRIBUTING](CONTRIBUTING.md)
