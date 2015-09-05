@@ -1,4 +1,5 @@
 require 'active_support/core_ext/hash/conversions'
+require 'active_model/serializers/xml'
 
 module ActiveRecord #:nodoc:
   module Serialization
