@@ -5,10 +5,6 @@ require 'active_support/testing/autorun'
 
 TEST_ROOT       = File.expand_path(File.dirname(__FILE__))
 FIXTURES_ROOT   = TEST_ROOT + "/fixtures"
-SCHEMA_FILE     = TEST_ROOT + "/schema.rb"
-ASSETS_ROOT     = TEST_ROOT + "/assets"
-MIGRATIONS_ROOT = TEST_ROOT + "/migrations"
-SCHEMA_ROOT     = TEST_ROOT + "/schema"
 require 'active_support/core_ext/string/access'
 require 'stringio'
 
