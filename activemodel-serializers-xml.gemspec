@@ -6,8 +6,8 @@ require 'active_model/serializers/version'
 Gem::Specification.new do |spec|
   spec.name          = "activemodel-serializers-xml"
   spec.version       = ActiveModel::Serializers::VERSION
-  spec.authors       = ["Zachary Scott"]
-  spec.email         = ["e@zzak.io"]
+  spec.authors       = ["Rails team"]
+  spec.email         = ["security@rubyonrails.com"]
 
   spec.summary       = "XML serialization for your Active Model objects and Active Record models - extracted from Rails"
   spec.homepage      = "http://github.com/rails/activemodel-serializers-xml"
