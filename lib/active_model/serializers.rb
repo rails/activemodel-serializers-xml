@@ -1,6 +1,5 @@
 require 'active_support'
 require 'active_support/lazy_load_hooks'
-require 'active_record'
 require 'active_model'
 require "active_model/serializers/version"
 
