@@ -3,10 +3,6 @@ require 'active_support/lazy_load_hooks'
 require 'active_model'
 require "active_model/serializers/version"
 
-ActiveSupport.on_load(:active_model) do
-  require "active_model/serializers/xml"
-end
-
 ActiveSupport.on_load(:active_record) do
   require "active_record/serializers/xml_serializer"
 end
