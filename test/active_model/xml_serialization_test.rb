@@ -28,7 +28,7 @@ class SerializableContact < Contact
   end
 end
 
-class AMXmlSerializationTest < ActiveModel::TestCase
+class AMXmlSerializationTest < ActiveSupport::TestCase
   def setup
     @contact = Contact.new
     @contact.name = 'aaron stack'
