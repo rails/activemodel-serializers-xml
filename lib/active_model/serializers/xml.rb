@@ -107,9 +107,10 @@ module ActiveModel
 
         def add_attributes_and_methods
           serializable_collection.each do |attribute|
-            key = ActiveSupport::XmlMini.rename_key(attribute.name, options)
+            _options = options.except(:methods)
+            key = ActiveSupport::XmlMini.rename_key(attribute.name, _options)
             ActiveSupport::XmlMini.to_tag(key, attribute.value,
-              options.merge(attribute.decorations))
+              _options.merge(attribute.decorations))
           end
         end
 
