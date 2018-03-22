@@ -28,6 +28,39 @@ class SerializableContact < Contact
   end
 end
 
+class Role
+  include ActiveModel::Serializers::Xml
+  attr_accessor :title
+
+  def initialize(title)
+    @title = title
+  end
+
+  def attributes
+    instance_values
+  end
+end
+
+class Human
+  include ActiveModel::Serializers::Xml
+
+  attr_accessor :first_name, :last_name, :role
+
+  def initialize(first_name, last_name, role)
+    @first_name = first_name
+    @last_name  = last_name
+    @role = role
+  end
+
+  def full_name
+    first_name + ' ' + last_name
+  end
+
+  def attributes
+    instance_values
+  end
+end
+
 class AMXmlSerializationTest < ActiveSupport::TestCase
   def setup
     @contact = Contact.new
@@ -247,5 +280,12 @@ class AMXmlSerializationTest < ActiveSupport::TestCase
   test "association with sti" do
     xml = @contact.to_xml(include: :contact)
     assert xml.include?(%(<contact type="SerializableContact">))
+  end
+
+  test "computed property applies only to root" do
+    role = Role.new("manager")
+    human = Human.new("Jane", "Air", role)
+    xml = human.to_xml(methods: :full_name)
+    assert_match %r{<full-name>}, xml
   end
 end
