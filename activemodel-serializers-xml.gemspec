@@ -15,11 +15,11 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ["lib"]
-  spec.add_dependency "activesupport", "> 5.x"
-  spec.add_dependency "activemodel", "> 5.x"
+  spec.add_dependency "activesupport", ">= 5.0.0.beta1"
+  spec.add_dependency "activemodel", ">= 5.0.0.beta1"
   spec.add_dependency "builder", "~> 3.1"
 
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "activerecord", "> 5.x"
+  spec.add_development_dependency "activerecord", ">= 5.0.0.beta1"
   spec.add_development_dependency "sqlite3"
 end
