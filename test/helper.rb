@@ -106,7 +106,6 @@ ActiveRecord::Schema.define do
     t.string :name
     t.integer :age
     t.binary :avatar
-    t.datetime :created_at
     t.boolean :awesome
     t.string :preferences
     t.integer :alternative_id
@@ -119,7 +118,6 @@ ActiveRecord::Schema.define do
     t.string :name
     t.integer :age
     t.binary :avatar
-    t.datetime :created_at
     t.boolean :awesome
     t.string :preferences
     t.integer :alternative_id
