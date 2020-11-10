@@ -1,3 +1,6 @@
+arch:
+  - amd64
+  - ppc64le
 language: ruby
 sudo: false
 rvm:
@@ -7,4 +10,6 @@ rvm:
 matrix:
   allow_failures:
     - rvm: ruby-head
+    - rvm: 2.2.4
+      arch: ppc64le
   fast_finish: true
