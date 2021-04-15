@@ -7,7 +7,7 @@ ActiveModel::Serializers::Xml is work of [many contributors](https://github.com/
 
 #### Fork the Project
 
-Fork the [project on Github](https://github.com/rails/activemodel-serializers-xml) and check out your copy.
+Fork the [project on GitHub](https://github.com/rails/activemodel-serializers-xml) and check out your copy.
 
 ```
 git clone https://github.com/contributor/activemodel-serializers-xml.git
