@@ -12,11 +12,15 @@ gem 'activemodel-serializers-xml'
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install activemodel-serializers-xml
+```
+$ gem install activemodel-serializers-xml
+```
 
 ## Usage
 
